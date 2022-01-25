@@ -1,5 +1,5 @@
 {% set name = "stone" %}
-{% set version = "3.2.1" %}
+{% set version = "3.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/dropbox/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 05a6c9fec0b923a5e54814f31365499d6e7b726aaddfe5b8ee2d1a4b6cb06d3a
+  sha256: 48b1a29b271fed237a6a1087bad3cca938f58c1650c69c35322ab14a2969c01b
 
 build:
   number: 0
@@ -20,12 +20,12 @@ build:
 requirements:
   host:
     - pip
-    - pytest-runner
+    - pytest-runner ==5.2.0
     - python >=3.5
   run:
     - ply >=3.4
     - python >=3.5
-    - six >=1.3.0
+    - six >=1.12.0
     - __unix  # Currently blocked by https://github.com/dropbox/stone/issues/214
 
 test:
