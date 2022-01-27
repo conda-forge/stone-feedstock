@@ -1,5 +1,5 @@
 {% set name = "stone" %}
-{% set version = "3.3.0" %}
+{% set version = "3.3.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/dropbox/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 48b1a29b271fed237a6a1087bad3cca938f58c1650c69c35322ab14a2969c01b
+  sha256: dc5aff3fad1333188d4ddb4eee0a19d31e6262bb3cdf10c0bbdaeb309ff91a52
 
 build:
   number: 0
@@ -26,7 +26,6 @@ requirements:
     - ply >=3.4
     - python >=3.5
     - six >=1.12.0
-    - __unix  # Currently blocked by https://github.com/dropbox/stone/issues/214
 
 test:
   imports:
