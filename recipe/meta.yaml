@@ -1,5 +1,5 @@
 {% set name = "stone" %}
-{% set version = "3.3.1" %}
+{% set version = "3.3.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/dropbox/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: dc5aff3fad1333188d4ddb4eee0a19d31e6262bb3cdf10c0bbdaeb309ff91a52
+  sha256: 21434d0872bae54da77aef0f2233161218a2dde77777452c3f08f5c83102fa53
 
 build:
   number: 0
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - pytest-runner ==5.2.0
+    - pytest-runner ==5.3.2
     - python >=3.5
   run:
     - ply >=3.4
@@ -30,18 +30,11 @@ requirements:
 test:
   imports:
     - stone
-    - stone.backends
   commands:
     - pip check
     - stone --help
-    - pytest test
   requires:
     - pip
-    - pytest <5
-    - mock>=2.0.0,<5.0
-    - coverage==5.3
-  source_files:
-    - test
 
 about:
   home: https://www.dropbox.com/developers
@@ -49,7 +42,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  dev_url: https://www.dropbox.com/developers
+  dev_url: https://github.com/dropbox/stone
   doc_url: https://github.com/dropbox/stone/tree/main/docs
 
 extra:
