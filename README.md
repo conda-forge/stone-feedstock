@@ -9,7 +9,7 @@ Package license: MIT
 
 Summary: Stone is an interface description language (IDL) for APIs.
 
-Development: https://www.dropbox.com/developers
+Development: https://github.com/dropbox/stone
 
 Documentation: https://github.com/dropbox/stone/tree/main/docs
 
