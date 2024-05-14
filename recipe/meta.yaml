@@ -1,5 +1,5 @@
 {% set name = "stone" %}
-{% set version = "3.3.4" %}
+{% set version = "3.3.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/dropbox/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 273a2ab461356513914852005fbf10f49bda3a03082f58f3b352c7a7f250a97a
+  sha256: 8e268c271a11738707abe07ae5e03bb0643d1f417027a5807fa9baa5f3ff2997
 
 build:
   number: 0
