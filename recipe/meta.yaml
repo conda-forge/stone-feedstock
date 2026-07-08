@@ -1,5 +1,6 @@
 {% set name = "stone" %}
 {% set version = "3.4.0" %}
+{% set python_min = "3.11" %}
 
 
 package:
