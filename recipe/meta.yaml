@@ -1,5 +1,6 @@
 {% set name = "stone" %}
-{% set version = "3.3.9" %}
+{% set version = "3.4.0" %}
+{% set python_min = "3.11" %}
 
 
 package:
@@ -8,7 +9,7 @@ package:
 
 source:
   url: https://github.com/dropbox/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: e9a54a81208ac2f3724523c3007492ad3cdb9b6a3eb69ad0d3eac94b1a2e0d69
+  sha256: 6b5e3ccb6f824866f0595d862fe1d72c82e15f367505863065bb3a17fdd820dd
 
 build:
   number: 0
@@ -20,14 +21,13 @@ build:
 requirements:
   host:
     - pip
-    - pytest-runner ==5.3.2
+    - setuptools
     - python {{ python_min }}
   run:
     - jinja2 >=3.0.3
     - packaging >=21.0
     - ply >=3.4
     - python >={{ python_min }}
-    - six >=1.12.0
 
 test:
   imports:
