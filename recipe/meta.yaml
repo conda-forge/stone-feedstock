@@ -1,5 +1,5 @@
 {% set name = "stone" %}
-{% set version = "3.5.0" %}
+{% set version = "3.5.1" %}
 {% set python_min = "3.11" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/dropbox/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 998ea7f9df549e022c55d1861ffba1426be5afeee76d2a0822cd78dd2a1fa1d5
+  sha256: 176e467d9ff9412dbebcd12e013a83a240b4bffec29a64f266dae16a442a49af
 
 build:
   number: 0
