@@ -22,6 +22,7 @@ requirements:
   host:
     - pip
     - setuptools
+    - setuptools-scm >=8,<9
     - python {{ python_min }}
   run:
     - jinja2 >=3.0.3
