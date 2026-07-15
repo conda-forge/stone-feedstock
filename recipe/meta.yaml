@@ -16,6 +16,8 @@ build:
   noarch: python
   entry_points:
     - stone=stone.cli:main
+  script_env:
+    - SETUPTOOLS_SCM_PRETEND_VERSION={{version}}
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
