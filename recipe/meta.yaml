@@ -1,5 +1,5 @@
 {% set name = "stone" %}
-{% set version = "3.5.2" %}
+{% set version = "3.5.3" %}
 {% set python_min = "3.11" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/dropbox/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 0bf6e5ed8739350da7e82cb003cad9b9fa6febe3a5850265514f1cd98711aaf3
+  sha256: ed600477656c91780558cd9a41b52bac1b9f19892790ccb5c394c5a6d1b37d1d
 
 build:
   number: 0
@@ -17,7 +17,7 @@ build:
   entry_points:
     - stone=stone.cli:main
   script_env:
-    - SETUPTOOLS_SCM_PRETEND_VERSION={{version}}
+    - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
