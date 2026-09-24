@@ -1,5 +1,5 @@
 {% set name = "stone" %}
-{% set version = "3.5.4" %}
+{% set version = "3.5.5" %}
 {% set python_min = "3.11" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/dropbox/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 31ad4a439576314306ba4345d67f93b4713c0b010cbeb0266164d3ac77df82db
+  sha256: 08ee8571a18d36fde84202b9626267b2095dcc9380bec6b8002075953a03ff57
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - python {{ python_min }}
   run:
     - jinja2 >=3.1.6
-    - packaging >=26.2
+    - packaging >=26.3
     - ply >=3.4
     - python >={{ python_min }}
 
